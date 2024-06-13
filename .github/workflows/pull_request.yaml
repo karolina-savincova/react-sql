@@ -1,0 +1,19 @@
+name: pull-request
+
+on: [pull_request]
+
+jobs:
+  built-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js v18
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18.x.x"
+      - run: npm install
+      - name: Build page
+        run: |
+          echo 'Building the page...'
+          npm run build
+          echo 'The page is built'
