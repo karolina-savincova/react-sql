@@ -11,16 +11,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18.x.x"
-      - run: npm install
+      - run: npm install && npm install -g @lhci/cli@0.13.x
       - name: Build page
         run: |
           echo 'Building the page...'
           npm run build
           echo 'The page is built'
+      - name: Run Lighthouse performance test
+        run: |
+          echo 'Running Lighthouse performance test...'
+          lhci autorun
       - name: Run E2E tests
         run: |
           echo 'Running E2E tests...'
-          npm run testcafe
+          npm run e2e:github
           echo 'The E2E tests finished'
       - name: Upload E2E report
         uses: actions/upload-artifact@v4
