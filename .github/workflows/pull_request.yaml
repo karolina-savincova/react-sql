@@ -25,7 +25,7 @@ jobs:
       - name: Run E2E tests
         run: |
           echo 'Running E2E tests...'
-          npm run testcafe
+          npm run e2e:github
           echo 'The E2E tests finished'
       - name: Upload E2E report
         uses: actions/upload-artifact@v4
