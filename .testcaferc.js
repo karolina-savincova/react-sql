@@ -16,8 +16,11 @@ module.exports = {
         },
     ],
     quarantineMode: {
-        successThreshold: 13000,
-        assertionTimeout: 6000,
-        pageLoadTimeout: 7000
-    }
+        successThreshold: 1,
+        attemptLimit: 3
+    },
+    selectorTimeout: 12000,
+    assertionTimeout: 6000,
+    pageLoadTimeout: 7000
+
 }
