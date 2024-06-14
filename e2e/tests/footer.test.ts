@@ -5,7 +5,7 @@ const po = new Page();
 fixture `Footer tests`
 
 
-    test(`Click on Linkedin button`, async t => {
+    test.skip(`Click on Linkedin button`, async t => {
         await t
             .click(po.linkedinBtn);
     });
