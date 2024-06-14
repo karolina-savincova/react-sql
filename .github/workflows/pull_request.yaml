@@ -20,7 +20,7 @@ jobs:
       - name: Run Lighthouse performance test
         run: |
           echo 'Running Lighthouse performance test...'
-          lhci autorun
+          lhci autorun http://localhost:3000/
       - name: Run E2E tests
         run: |
           echo 'Running E2E tests...'
