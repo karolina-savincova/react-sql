@@ -19,8 +19,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.19.0",
     "react-scripts": "5.0.1",
-    "sqlite3": "^5.1.7",
-    "testcafe-reporter-html": "^1.4.6"
+    "sqlite3": "^5.1.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,7 +45,8 @@
     "@types/node": "^20.9.5",
     "gh-pages": "^6.1.1",
     "serve": "^14.2.3",
-    "testcafe": "^3.6.1"
+    "testcafe": "^3.6.1",
+    "testcafe-reporter-html": "^1.4.6"
   },
   "browserslist": {
     "production": [
