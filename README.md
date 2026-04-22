@@ -1,11 +1,5 @@
 # Courses Demo Page (React + Node.js + SQLite3)
 
-### **Link to the demo page:** https://kaya234.github.io/react-sql
-
-### **Link to the API:** https://river-spice-blouse.glitch.me/courses
-
-### **Link to the demo page:** 
-
 Courses Demo Page project showcases a simple yet effective course management system using **React** for the **front-end** and **Node.js** and **SQLite3** for the **back-end**.\
 It provides an intuitive interface to browse through a collection of courses, filter them based on specific category, and search for relevant ones based on name or category. Each course listing includes a brief details, thumbnail, and a button to view more information.
 
